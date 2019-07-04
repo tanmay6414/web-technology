@@ -1,0 +1,38 @@
+.header {
+		
+			height: 40px;
+    		background-color: black;
+    		padding: 20px;
+    		text-align: center;
+    	}
+    	td tr {
+    		color: white;
+    		text-align: center;
+    	}
+    	h1 {
+    		font-size: 20px;
+    		font-family: Times
+    	}
+
+    	.div1 {
+    		background-image: radial-gradient(#003366,#000033);
+    		background-color:#696969;
+    		height: 500px;
+    		background-repeat: no-repeat;
+    	}
+
+    	.diva{
+    		background-color: white;
+    		height: 75px;
+    	}
+
+    	.curevent{
+    		background-color: #f2f2f2;
+
+    	}
+    	.clasfy{
+    		float: right;
+    		width: 50%;
+    		height: 500px
+    	}
+    	

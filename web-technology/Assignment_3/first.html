@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alison Online Learning</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.header {
+		
+			height: 40px;
+    		background-color: black;
+    		padding: 20px;
+    		text-align: center;
+    	}
+    	
+
+    	.form{
+    		background-color: white;
+    		width: 100%;
+    	}
+    	.main{
+    		background-color: #000033;
+    		width: 100%
+    	}
+    	input[type=text]{
+    		border: 2px solid black;
+    		border-radius: 5px;
+    		border-color: black;
+    	}
+
+    	
+		input[type=text]:focus {
+    		background-color: grey;
+		}
+
+		
+	</style>
+</head>
+<body>
+
+	<div>
+		<header>
+		<div class="header">
+				<img src="logo.svg" width="110px" align="left">
+				<h1 style="text-align: left; ">
+					<span style="color: white">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp Courses
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Categories 
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Career Guide  
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Hubs </span>
+					<img src="login.png" width="180px" align="right">
+					
+				</h1>
+		</div>
+		</header>
+
+		<div class="form">
+			<form>
+				First Name : <input type="text" id="fname" placeholder="  First Name"><br><br>
+				Middle Name : <input type="text" id="mname" placeholder="  Middle Name"><br><br>
+				Last Name : <input type="text" id="lname" placeholder="  Last Name"><br><br>
+				Email : <input type="text" id="mail" placeholder="  Email"><br><br>
+				Address:<br>
+				Line 1 : <input type="text" placeholder="  Address line 1"> 
+				Line 2 : <input type="text" placeholder="  Address line 2"><br><br>
+				City : <input type="text" placeholder="  Enter city name..">
+				Distric : <input type="text" placeholder= "  Enter distric name...">
+				State : <input type="text" placeholder="  Enter state name...."><br><br>
+				Pincode : <input type="text" placeholder="  Enter pincode"><br><br>
+				Gendre : <input type="radio" name="gendre" value="male" checked="">Male<br>
+						 <input type="radio" name="gendre" value="female">Female<br>
+						 <input type="radio" name="gendre" value="other">Other<br><br>
+
+				Date of Birth : <input type="Date" name="dob"><br><br>
+
+
+				Department :
+						<select name="dept">
+							 <option value="None" selected> None</option>
+							 <option value="IT"> Information Technology</option>
+							 <option value="Comp"> Computer</option>
+							 <option value="mech"> Mechanical</option>
+							 <option value="Etx"> Eletronix</option>
+							 <option value="chem"> Chemical</option>
+						</select>
+
+				Year : 
+						<select name="year">
+							 <option value="None" selected> None</option>
+							 <option value="first"> First Year</option>
+							 <option value="second"> Second Year</option>
+							 <option value="third">Third Year</option>
+							 <option value="fourth"> BE</option>
+						</select><br><br>
+
+
+				 Tell us about yourself : <br>
+				 <textarea name="message" style="width:50%; height:100px;"></textarea>
+
+				 <br><br><br>
+				 <button>Submit</button>
+
+
+
+			</form>
+		</div>
+
+	
+			
+	</div>
+
+</body>
+</html>

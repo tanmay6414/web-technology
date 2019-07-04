@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alison Signup Form</title>
+	<style type="text/css">
+		.main{
+    		background-image: radial-gradient( #ffff99,#ffe6e6);
+    		width: 100%;
+    		height: 1000px
+    	}
+    	.header {
+		
+			height: 40px;
+    		background-color: black;
+    		padding: 20px;
+    		text-align: center;
+    	}
+    	.form{
+    		
+    		width: 100%;
+
+
+    	}
+    	input[type=text],[type=password],[type=date]{
+    		border: 2px solid black;
+    		border-radius: 5px;
+    		border-color: black;
+    	}
+
+    	
+		input[type=text]:focus {
+    		background-color:#ffff66;
+		}
+		select{
+    		border: 2px solid black;
+    		border-radius: 5px;
+    		border-color: black;
+    	}
+    	textarea{
+    		border: 2px solid black;
+    		border-radius: 5px;
+    		border-color: black;
+    	}
+    	textarea:focus {
+    		background-color:#ffff66;
+		}
+		input[type=password]:focus {
+    		background-color:#ffff66;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="main">
+
+		<header>
+		<div class="header">
+				<img src="logo.svg" width="110px" align="left">
+				<h1 style="text-align: left; ">
+					<span style="color: white">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp Courses
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Categories 
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Career Guide  
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Hubs </span>
+					<img src="login.png" width="180px" align="right">
+					
+				</h1>
+		</div>
+		</header>
+
+		<div class="form">
+			<h1 style="text-align: center;">Signup Form</h1>
+			<form style="padding-top: 50px; padding-left: 30%;border: 5px solid black; " onsubmit="return Tanmay()" name="RegForm">
+				Name : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="Name" id="fname" placeholder="  Enter Name"><br><br>
+				
+				Email : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="mail" name="Email" placeholder=" Enter Email"><br><br>
+				Password : &nbsp&nbsp&nbsp&nbsp&nbsp<input type="password" name="Password" placeholder=" Enter Password"><br><br>
+				Address:<br>
+				Line 1 : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" placeholder="  Flat no/Building name" name="line1"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				Line 2 : <input type="text" placeholder="  Landmark" name="line2"><br><br>
+				City :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" placeholder="  Enter city name..">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				Distric : <input type="text" placeholder= "  Enter distric name..." name="Distric">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				State : <input type="text" placeholder="  Enter state name...." name="State"><br><br>
+				Pincode :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" placeholder="  Enter pincode" name="Pincode"><br><br>
+				Gendre :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						 <input type="radio" name="gendre" value="male" checked="">Male<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						 <input type="radio" name="gendre" value="female">Female<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						 <input type="radio" name="gendre" value="other">Other<br><br>
+
+				Date of Birth : <input type="Date" name="Dob"><br><br>
+
+
+				Department :&nbsp&nbsp
+						<select  name="Department">
+							 <option value="None" selected> None</option>
+							 <option value="IT"> Information Technology</option>
+							 <option value="Comp"> Computer</option>
+							 <option value="mech"> Mechanical</option>
+							 <option value="Etx"> Eletronix</option>
+							 <option value="chem"> Chemical</option>
+						</select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				Year : 
+						<select  name="Year">
+							 <option value="None" selected> None</option>
+							 <option value="first"> First Year</option>
+							 <option value="second"> Second Year</option>
+							 <option value="third">Third Year</option>
+							 <option value="fourth"> BE</option>
+						</select><br><br>
+
+
+				 Tell us about yourself : <br>
+				 <textarea name="Yourself" style="width:50%; height:100px;"></textarea>
+
+				 <br><br><br>
+				 <button type="submit">Submit</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 
+				 <button type="reset">Reset</button>
+			</form>
+		</div>
+		
+	</div>
+
+</body>
+<script type="text/javascript">
+	function Tanmay()
+	{
+		var name = document.forms["RegForm"]["Name"];
+		var email = document.forms["RegForm"]["Email"];
+		var password = document.forms["RegForm"]["Password"];
+		var Line1 = document.forms["RegForm"]["line1"];
+		var Line2 = document.forms["RegForm"]["line2"];
+		var city = document.forms["RegForm"]["City"];
+		var distric = document.forms["RegForm"]["Distric"];
+		var state = document.forms["RegForm"]["State"];
+		var department = document.forms["RegForm"]["Department"];
+		var year = document.forms["RegForm"]["Year"];
+		var dob = document.forms["RegForm"]["Dob"];
+		var yourself = document.forms["RegForm"]["Yourself"];
+
+
+
+		if(name.value==""){
+			window.alert("Please enter your name first");
+			name.focus();
+			return false;
+		}
+
+		if(email.value==""){
+			window.alert("Please enter valid email address");
+			email.focus();
+			return false;
+		}
+
+		if (email.value.indexOf(".", 0) < 0){ 
+        	window.alert("Please enter a valid e-mail address."); 
+        	email.focus(); 
+        	return false; 
+    	} 
+
+    	if(password.value==""){
+			window.alert("Please enter your password first or enter valid password");
+			password.focus();
+			return false;
+		}
+
+		if(distric.value==""){
+			window.alert("Please enter your distric first");
+			distric.focus();
+			return false;
+		}
+
+		if(state.value==""){
+			window.alert("Please enter your state first");
+			state.focus();
+			return false;
+		}
+
+		if(Line2.value==""){
+			window.alert("Please enter your Landmark of adress first");
+			Line2.focus();
+			return false;
+		}
+		
+   		if(dob.value==""){
+			window.alert("Please enter your date of birth first");
+			dob.focus();
+			return false;
+		}
+
+
+   		if(department.value=="None"){
+			window.alert("Please enter your department first");
+			department.focus();
+			return false;
+		}
+
+		if(year.value=="None"){
+			window.alert("Please enter your year of degree first");
+			year.focus();
+			return false;
+		}
+
+		
+
+	}
+</script>
+</html>
